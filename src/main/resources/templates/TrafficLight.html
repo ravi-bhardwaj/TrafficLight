@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Light</title>
+    <link rel="stylesheet" type="text/css" href="/css/TrafficLightStyle.css">
+</head>
+<body>
+    <!--/*@thymesVar id="trafficLight" type="com.demo.trafficlight.domain.TrafficLight"*/-->
+    <div id="trafficLight">
+        <div id="redLight" th:classappend="${trafficLight.isRed()} ? 'bulb-red' : 'bulb-black'"></div>
+        <div id="amberLight" th:classappend="${trafficLight.isAmber()} ? 'bulb-amber' : 'bulb-black'"></div>
+        <div id="greenLight" th:classappend="${trafficLight.isGreen()} ? 'bulb-green' : 'bulb-black'"></div>
+    </div>
+    <div id="stateChangeButton">
+        <a href="/trafficLight/changeState" class="button"> Change </a>
+    </div>
+</body>
+</html>

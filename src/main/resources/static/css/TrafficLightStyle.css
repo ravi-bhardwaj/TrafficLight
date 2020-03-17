@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+}
+
+#stateChangeButton {
+    float: left;
+    padding-top: 30px;
+}
+
+.button {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 90px 40px;
+    cursor: pointer;
+}
+
+#trafficLight {
+    height: 550px;
+    width: 200px;
+    float: left;
+    background-color: #333;
+    border-radius: 40px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.bulb-black {
+    height: 150px;
+    width: 150px;
+    background-color: #111;
+    border-radius: 50%;
+    margin: 25px auto;
+    transition: background 500ms;
+}
+
+.bulb-red {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 25px auto;
+    transition: background 500ms;
+}
+
+.bulb-amber {
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    border-radius: 50%;
+    margin: 25px auto;
+    transition: background 500ms;
+}
+
+.bulb-green {
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    border-radius: 50%;
+    margin: 25px auto;
+    transition: background 500ms;
+}
